@@ -74,9 +74,16 @@ namespace Lab_2
              else if (answerheads == "3"){
                  Console.WriteLine("Time to Kick some Butt");}*/
             // Console.ReadLine();
-            Console.WriteLine("Choose your weapon");
+            string answerweapon = "Slingshot,Sword,Bow and Arrow";
+            do
+            {
+                Console.WriteLine("Choose your weapon");
+                Console.WriteLine("Slingshot, Sword, Bow and Arrow");
+                answerweapon = Console.ReadLine();
+            } while (answerweapon == (""));
+
             Console.WriteLine("Slingshot, Sword, Bow and Arrow");
-            string answerweapon = Console.ReadLine();
+
             switch (answerweapon)
             {
                 case "Slingshot":
@@ -93,23 +100,53 @@ namespace Lab_2
                     Console.WriteLine("Wrong Selection");
                     break;
             }
+            Console.WriteLine("Armed with your bow and arrow, you approach the dragon");
+            Console.WriteLine("You can feel its fiery breath as you get closer");
+            Console.WriteLine("It stares at you.");
+            string answereyes = "Red,Blue";
+            do
+            {
+                Console.WriteLine("What color is its eyes? (red or blue)/n");
+               
+                Console.WriteLine("Red, Blue");
+                answereyes= Console.ReadLine();
+            }
+            while (answereyes == (""));
+          switch (answereyes)
+            {
+                case "blue":
+                Console.WriteLine("Not friendly");
+                break;
+                
+                case "red":
+                Console.WriteLine("Oh Thank goodness! Red-eyed dragons are friendly. You Pet it and become friends.");
+                break;
+
+                default:
+                Console.WriteLine("Make another selection");
+                break;
+            }
+            Console.WriteLine("You name the dragon");
+            string answerdragon = Console.ReadLine();
+            Console.Write(answername + "  " + answerdragon);
+            Console.Write("  live happily ever after.");
         }
+
+        /*   if (answerweapon == "Slingshot"){
+               Console.WriteLine("Hope he falls. Choose Rock Carefully");}
+           Console.ReadLine();
+           if (answerweapon == "Sword")
+           {
+               Console.WriteLine("Get Close and Ensure Sword is Sharp");
+           }
+           Console.ReadLine();
+           if (answerweapon == "Bow and Arrow")
+           {
+               Console.WriteLine("Take good Aim");
+           }
+
+    */
     }
-
-    /*   if (answerweapon == "Slingshot"){
-           Console.WriteLine("Hope he falls. Choose Rock Carefully");}
-       Console.ReadLine();
-       if (answerweapon == "Sword")
-       {
-           Console.WriteLine("Get Close and Ensure Sword is Sharp");
-       }
-       Console.ReadLine();
-       if (answerweapon == "Bow and Arrow")
-       {
-           Console.WriteLine("Take good Aim");
-       }
-
-*/
 }
 
 
